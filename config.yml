@@ -1,3 +1,8 @@
+# 自定义显示 badge 详细查看
+# http://shields.io/
+# https://david-dm.org/
+# 格式:
+# - [![alt](img)](href)
 - "[![npm version](http://img.shields.io/npm/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
 - "[![npm download](http://img.shields.io/npm/dm/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
 - "[![npm engines](http://img.shields.io/node/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"

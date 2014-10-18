@@ -13,7 +13,25 @@ var minimize = new Minimize({quotes: true})
 
 var config = yamljs.load('./config.yml')
 var packageData = yamljs.load('./data.yml')
-gulp.task('html', function() {
+
+gulp.task('tbody', function(){
+  var reg = /\!\[([^\]\[]+)\]\(([^\(\)]+)\)\]\(([^\(\)]+)\)/
+  var begin = '<tr>';
+  var end = '</tr>'
+  var content = '<td><a href="{{root.github}}{{repo}}" target="_blank">{{name}}</a></td>'
+  for (var i = config.length - 1; i >= 0; i--) {
+    var badge = config[i];
+    badge = reg.exec(badge)
+    content += '<td><a href="'+badge[3]+'"><img src="'+badge[2]+'" alt="'+badge[1]+'"/></a></td>'
+  };
+  content = content.replace(/(\<\%\=|\%\>)/g, function(match, p1){
+    return p1 === '%>'? '}}' : '{{'
+  })
+  content = begin + content + end;
+  fs.writeFileSync('./views/tbody.xtpl', content)
+})
+
+gulp.task('html', ['tbody'], function() {
   var indnx = xtemplate.renderFile('./views/content.xtpl', packageData, function(err, content) {
     minimize.parse(content, function(err, data) {
       fs.writeFileSync('index.html', data)
