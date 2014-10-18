@@ -13,6 +13,6 @@
 
 <footer>
   <p>This web page was created using <a href="https://github.com/noyobo/badgeboard">noyobo/badgeboard</a> generator.</p>
-  <p>Badges can custom by <a href="http://shields.io/" target="_blank">shields.io</a> and <a href="https://david-dm.org/" target="_blank">david-dm.org</a></p>
-  <p>If you like it, can fork the repositories, modify <strong>badges.yml</strong> then <strong>gulp build</strong></p>
+  <p><strong>badges.yml</strong>  can custom by <a href="http://shields.io/" target="_blank">shields.io</a> and <a href="https://david-dm.org/" target="_blank">david-dm.org</a></p>
+  <p>If you like it, can fork the repositories, change <strong>data.yml</strong> then <strong>gulp build</strong></p>
 </footer>
