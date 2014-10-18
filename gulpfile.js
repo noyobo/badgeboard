@@ -11,7 +11,7 @@ var fs = require('fs')
 
 var minimize = new Minimize({quotes: true})
 
-var config = yamljs.load('./config.yml')
+var badges = yamljs.load('./badges.yml')
 var packageData = yamljs.load('./data.yml')
 
 gulp.task('tbody', function(){
@@ -19,8 +19,8 @@ gulp.task('tbody', function(){
   var begin = '<tr>';
   var end = '</tr>'
   var content = '<td><a href="{{root.github}}{{repo}}" target="_blank">{{name}}</a></td>'
-  for (var i = config.length - 1; i >= 0; i--) {
-    var badge = config[i];
+  for (var i = 0; i < badges.length; i++) {
+    var badge = badges[i];
     badge = reg.exec(badge)
     content += '<td><a href="'+badge[3]+'"><img src="'+badge[2]+'" alt="'+badge[1]+'"/></a></td>'
   };
@@ -42,7 +42,6 @@ gulp.task('html', ['tbody'], function() {
 gulp.task('mark', function() {
   var file = 'README.md'
   fs.writeFileSync(file, markdown.title('badgeboard', 1))
-  fs.appendFileSync(file, markdown.text('NPM徽章墙, 如果你也喜欢, 欢迎fork, 修改`data.yml` `gulp build` 生成'))
   fs.appendFileSync(file, markdown.title('Projects', 2))
   var thead = ['Packages name', '']
   var tbody = []
@@ -51,14 +50,17 @@ gulp.task('mark', function() {
       rowtxt = ''
     var item = packageData.projects[i];
     row.push(markdown.link(item.name, packageData.github + item.repo))
-    for (var i = 0; i < config.length; i++) {
-      var k = config[i];
+    for (var i = 0; i < badges.length; i++) {
+      var k = badges[i];
       rowtxt += (template(k, item) + ' ');
     };
     row.push(rowtxt)
     tbody.push(row)
   })
   fs.appendFileSync(file, markdown.table(thead, tbody))
+  fs.readFile('./views/footer.xtpl', function(err, data){
+    fs.appendFileSync(file, data)
+  })
 })
 
 gulp.task('build', ['html', 'mark'])

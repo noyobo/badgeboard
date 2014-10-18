@@ -10,6 +10,6 @@
 <body>
     <header> {{title}} </header>
     <div class="content">{{{block ("body")}}}<div>
+    {{include ('./footer')}}
 </body>
-
 </html>

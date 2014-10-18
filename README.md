@@ -1,7 +1,5 @@
 # Badgeboard
 
-NPM徽章墙, 如果你也喜欢, 欢迎fork, 修改`data.yml` `gulp build` 生成.
-
 ## Projects
 
 |Packages name                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -13,3 +11,8 @@ NPM徽章墙, 如果你也喜欢, 欢迎fork, 修改`data.yml` `gulp build` 生�
 |[update-npm](https://github.com/noyobo/update-npm)            |[![npm version](http://img.shields.io/npm/v/update-npm.svg)](https://www.npmjs.org/package/update-npm) [![npm download](http://img.shields.io/npm/dm/update-npm.svg)](https://www.npmjs.org/package/update-npm) [![npm engines](http://img.shields.io/node/v/update-npm.svg)](https://www.npmjs.org/package/update-npm) [![npm dependencise](https://david-dm.org/noyobo/update-npm.svg)](https://david-dm.org/noyobo/update-npm) [![build status](http://img.shields.io/travis/noyobo/update-npm.svg)](https://travis-ci.org/noyobo/update-npm)                                                             |
 |[colors-mini](https://github.com/noyobo/colors)               |[![npm version](http://img.shields.io/npm/v/colors-mini.svg)](https://www.npmjs.org/package/colors-mini) [![npm download](http://img.shields.io/npm/dm/colors-mini.svg)](https://www.npmjs.org/package/colors-mini) [![npm engines](http://img.shields.io/node/v/colors-mini.svg)](https://www.npmjs.org/package/colors-mini) [![npm dependencise](https://david-dm.org/noyobo/colors.svg)](https://david-dm.org/noyobo/colors) [![build status](http://img.shields.io/travis/noyobo/colors.svg)](https://travis-ci.org/noyobo/colors)                                                                       |
 
+<footer>
+  <p>This web page was created using <a href="https://github.com/noyobo/badgeboard">noyobo/badgeboard</a> generator.</p>
+  <p>Badges can custom by <a href="http://shields.io/" target="_blank">shields.io</a> and <a href="https://david-dm.org/" target="_blank">david-dm.org</a></p>
+  <p>If you like it, can fork the repositories, modify <strong>badges.yml</strong> then <strong>gulp build</strong></p>
+</footer>
