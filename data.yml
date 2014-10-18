@@ -1,0 +1,17 @@
+title: noyobo' badge board
+
+github: https://github.com/
+
+projects:
+  - name: gbm
+    repo: noyobo/gbm
+  - name: generator-xmc
+    repo: noyobo/generator-xmc
+  - name: confirm-simple
+    repo: noyobo/confirm-simple
+  - name: generator-noyobo
+    repo: noyobo/generator-noyobo
+  - name: update-npm
+    repo: noyobo/update-npm
+  - name: colors-mini
+    repo: noyobo/colors

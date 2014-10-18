@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="charset" content="utf-8" />
+    <title>{{title}}</title>
+    {{include ('./style')}}
+</head>
+
+<body>
+    <header> {{title}} </header>
+    <div class="content">{{{block ("body")}}}<div>
+</body>
+
+</html>

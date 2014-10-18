@@ -1,0 +1,5 @@
+- "[![npm version](http://img.shields.io/npm/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
+- "[![npm download](http://img.shields.io/npm/dm/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
+- "[![npm engines](http://img.shields.io/node/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
+- "[![npm dependencise](https://david-dm.org/<%= repo %>.svg)](https://david-dm.org/<%= repo %>)"
+- "[![build status](http://img.shields.io/travis/<%= repo %>.svg)](https://travis-ci.org/<%= repo %>)"

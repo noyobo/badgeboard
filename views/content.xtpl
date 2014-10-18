@@ -1,0 +1,38 @@
+{{extend ('./layout')}}
+{{#block ('body')}}
+<h1>Projects</h1>
+<div>
+<table width="100">
+  <thead>
+    <tr>
+      <th>Package name</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each(projects)}}
+      <tr>
+        <td>
+          <a href="{{root.github}}{{repo}}" target="_blank">{{name}}</a>
+        </td>
+        <td>
+          <a href="ttps://www.npmjs.org/package/{{name}}"><img src="http://img.shields.io/npm/v/{{name}}.svg" alt="npm version"/></a>
+        </td>
+        <td>
+          <a href="https://www.npmjs.org/package/{{name}}"><img src="http://img.shields.io/npm/dm/{{name}}.svg" alt="npm download"/></a>
+        </td>
+        <td>
+          <a href="https://www.npmjs.org/package/{{name}}"><img src="http://img.shields.io/node/v/{{name}}.svg" alt="npm engines"/></a>
+        </td>
+        <td>
+          <a href="https://david-dm.org/{{repo}}"><img src="https://david-dm.org/{{repo}}.svg" alt="npm dependencies"/></a>
+        </td>
+        <td>
+          <a href="https://travis-ci.org/{{repo}}"><img src="http://img.shields.io/travis/{{repo}}.svg" alt="build status"/></a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+{{/block}}
