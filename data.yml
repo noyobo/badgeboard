@@ -3,6 +3,8 @@ title: noyobo' badge board
 github: https://github.com/
 
 projects:
+  - name: gulp-compass-compile
+    repo: noyobo/gulp-compass-compile
   - name: gbm
     repo: noyobo/gbm
   - name: generator-xmc
