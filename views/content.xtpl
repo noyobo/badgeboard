@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Package name</th>
-      <th colspan="5"></th>
+      <th colspan="{{len}}"></th>
     </tr>
   </thead>
   <tbody>

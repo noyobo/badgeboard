@@ -14,6 +14,8 @@ var minimize = new Minimize({quotes: true})
 var badges = yamljs.load('./badges.yml')
 var packageData = yamljs.load('./data.yml')
 
+packageData.len = badges.length;
+
 gulp.task('tbody', function(){
   var reg = /\!\[([^\]\[]+)\]\(([^\(\)]+)\)\]\(([^\(\)]+)\)/
   var begin = '<tr>';
