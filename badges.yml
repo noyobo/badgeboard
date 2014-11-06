@@ -10,9 +10,9 @@
 # format:
 # - [![alt](img)](href)
 #
-- "[![npm version](http://img.shields.io/npm/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
-- "[![npm download](http://img.shields.io/npm/dm/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
-- "[![npm engines](http://img.shields.io/node/v/<%= name %>.svg)](https://www.npmjs.org/package/<%= name %>)"
-- "[![build status](http://img.shields.io/travis/<%= repo %>.svg)](https://travis-ci.org/<%= repo %>)"
-- "[![Coverage Status](https://img.shields.io/coveralls/<%= repo%>.svg)](https://coveralls.io/r/<%= repo%>)"
-- "[![npm dependencise](https://david-dm.org/<%= repo %>.svg)](https://david-dm.org/<%= repo %>)"
+- "[![npm version](http://img.shields.io/npm/v/<%= name %>.svg?style=flat)](https://www.npmjs.org/package/<%= name %>)"
+- "[![npm download](http://img.shields.io/npm/dm/<%= name %>.svg?style=flat)](https://www.npmjs.org/package/<%= name %>)"
+- "[![npm engines](http://img.shields.io/node/v/<%= name %>.svg?style=flat)](https://www.npmjs.org/package/<%= name %>)"
+- "[![build status](http://img.shields.io/travis/<%= repo %>.svg?style=flat)](https://travis-ci.org/<%= repo %>)"
+- "[![Coverage Status](https://img.shields.io/coveralls/<%= repo%>.svg?style=flat)](https://coveralls.io/r/<%= repo%>)"
+- "[![npm dependencise](https://david-dm.org/<%= repo %>.svg?style=flat)](https://david-dm.org/<%= repo %>)"
