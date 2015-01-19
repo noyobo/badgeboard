@@ -3,17 +3,19 @@ title: noyobo' badge board
 github: https://github.com/
 
 projects:
+  - name: confirm-simple
+    repo: noyobo/confirm-simple
+  - name: colors-mini
+    repo: noyobo/colors
   - name: gulp-compass-compile
     repo: noyobo/gulp-compass-compile
   - name: gbm
     repo: noyobo/gbm
   - name: generator-xmc
     repo: noyobo/generator-xmc
-  - name: confirm-simple
-    repo: noyobo/confirm-simple
   - name: generator-noyobo
     repo: noyobo/generator-noyobo
+  - name: kserver
+    repo: noyobo/kserver
   - name: update-npm
     repo: noyobo/update-npm
-  - name: colors-mini
-    repo: noyobo/colors
