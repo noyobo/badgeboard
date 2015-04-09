@@ -9,6 +9,8 @@ projects:
     repo: noyobo/colors
   - name: gulp-compass-compile
     repo: noyobo/gulp-compass-compile
+  - name: gulp-glue
+    repo: noyobo/gulp-glue
   - name: gbm
     repo: noyobo/gbm
   - name: generator-xmc
