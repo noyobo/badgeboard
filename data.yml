@@ -7,6 +7,8 @@ projects:
     repo: noyobo/confirm-simple
   - name: colors-mini
     repo: noyobo/colors
+  - name: gulp-jsx2example
+    repo: noyobo/gulp-jsx2example
   - name: gulp-compass-compile
     repo: noyobo/gulp-compass-compile
   - name: gulp-glue
