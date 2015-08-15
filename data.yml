@@ -21,5 +21,3 @@ projects:
     repo: noyobo/generator-noyobo
   - name: kserver
     repo: noyobo/kserver
-  - name: update-npm
-    repo: noyobo/update-npm
