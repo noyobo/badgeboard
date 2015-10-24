@@ -21,3 +21,5 @@ projects:
     repo: noyobo/generator-noyobo
   - name: kserver
     repo: noyobo/kserver
+  - name: react-colors-picker
+    repo: react-component/react-colors-picker
