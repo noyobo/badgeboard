@@ -11,6 +11,8 @@ projects:
     repo: noyobo/gulp-compass-compile
   - name: gulp-glue
     repo: noyobo/gulp-glue
+  - name: gulp-concat-style
+    repo: noyobo/gulp-concat-style
   - name: gbm
     repo: noyobo/gbm
   - name: generator-xmc
