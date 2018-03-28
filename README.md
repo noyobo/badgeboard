@@ -1,5 +1,7 @@
 # Badgeboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/noyobo/badgeboard.svg)](https://greenkeeper.io/)
+
 ## Projects
 
 |Packages name                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
